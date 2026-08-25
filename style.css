@@ -1,0 +1,79 @@
+/*1. Reset and Base Styles
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensure that padding and border are included in the element's total width and height */
+
+
+body {
+    font-family: 'segoe ui', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+}
+
+/*2. Header container*/
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    /* pushes elements to the edges of the container */
+    align-items: center;
+    /*top/bottom padding, left /right padding */
+    padding: 20px 10%;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    /*add a suble shadow underneath */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/*3. Logo Styles*/
+.logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+    TEXT-decoration: none;
+}
+
+.logo a:span {
+    color: #544354;
+    /*accent color for the logo */
+}
+
+/*4. Navigation Styles*/
+.nav-menu ul {
+    list-style: none;
+    /*removes  bullet points */
+    display: flex;
+    gap: 30px;
+    /*even space between links */
+}
+
+.nav-menu ua {
+    text-decoration: none;
+    color: #ef0808;
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    /*smooth transition for hover effect */
+}
+
+.nav-menu a:hover {
+    color: #1ace80;
+}
+
+
+/*5. cta button styles*/
+.btn {
+    display: inline-block;
+    background-color: #007BFF;
+    color: #16b550;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
