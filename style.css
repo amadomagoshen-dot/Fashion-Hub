@@ -7,7 +7,7 @@
 
 body {
     font-family: 'segoe ui', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f7f6;
+    background-color: #e4ece6;
 }
 
 /*2. Header container*/
@@ -30,7 +30,7 @@ body {
 .logo a {
     font-size: 24px;
     font-weight: bold;
-    color: #333333;
+    color: #b52727;
     TEXT-decoration: none;
 }
 
@@ -50,7 +50,7 @@ body {
 
 .nav-menu ua {
     text-decoration: none;
-    color: #ef0808;
+    color: #3608ef;
     font-weight: 500;
     font-size: 16px;
     transition: color 0.3s ease;
@@ -76,4 +76,52 @@ body {
 
 .btn:hover {
     background-color: #0056b3;
+}
+.hero-section{
+    border: 1px solid rgb(125, 87, 87);
+    padding: 92px 0 72px;
+    text-align: center;
+    background-color: white (222, 237, 8);
+}
+
+.hero-section h1 {
+    font-size: clamp(34px, 5vw, 48px);
+    margin:10px auto 20px;
+    max-width: 820px;
+}
+
+.hero-section p {
+    font-size: clamp(16px, 2vw, 20px);
+    margin: 10px 20px;
+    max-width: 600px;
+    color: #888888;
+    font-size: 18px;
+}
+
+.hero-section .hero-section{
+    display:inline-block;
+    gap: 16px;
+}
+
+
+.btn {
+    front-size: 14px;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    padding: 11px 20px;
+    text-decoration: none;
+    background-color: transparent;
+    transition: background  .2s ease, border-color .2s ease,transfrom .15 ease;
+}
+
+ 
+.btn:hover{
+    border-color: orange;
+    transform: translateX(-2px);
+}
+
+.btm.primary{
+    background-color: #31b516;
+ border: #efe9e9;
+ color: #000000;
 }
