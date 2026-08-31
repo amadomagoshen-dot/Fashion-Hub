@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Fashion Hub</title>
+    <link rel="contact sheet" href=".contact.html ">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="main-header">
+    <div class="header-container">
+        <div class="logo">
+            <a href="index.html">
+                <img src="./fashion hub.jpeg" alt="Fashion Hub Logo" style="width: 100px; height: auto;">
+            </a>
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="services.html" class="nav-link">Services</a>
+            <a href="Portfolio.html" class="nav-link">Portfolio</a>
+            <a href="about.html" class="nav-link active">About</a>
+        </nav>
+
+        <div class="cta-button">
+            <a href="#" class="btn-primary">Get Started</a>
+        </div>
+
+        <div class="mobile-menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section class="page-banner">
+        <h1>About Fashion Hub</h1>
+        <p>Discover our story and vision</p>
+    </section>
+
+    <section class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <h2>Who We Are</h2>
+                <p>Fashion Hub is a premier destination for quality fashion across all age groups and styles. We believe in making trendy, comfortable, and affordable clothing accessible to everyone.</p>
+                
+                <h3>Our Collections</h3>
+                <div class="collections-grid">
+                    <div class="collection-card">
+                        <h4>👗 Women's Collection</h4>
+                        <p>Features a wide range of wardrobe essentials, from trend-forward everyday wear and office attire to elegant evening outfits and comfortable loungewear.</p>
+                    </div>
+                    <div class="collection-card">
+                        <h4>👔 Men's Collection</h4>
+                        <p>Focuses on versatility and fit, offering everything from crisp formal shirts and tailored trousers to casual denim, tees, and seasonal outerwear.</p>
+                    </div>
+                    <div class="collection-card">
+                        <h4>👶 Children's Line</h4>
+                        <p>Designed with durability and comfort in mind, offering colorful, easy-to-wear clothing for babies, toddlers, and growing kids.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2026 Fashion Hub. All rights reserved.</p>
+         <p><a>Email: assumptabest2502@gmail.com | Phone: 2348104748711</a>Contact</p>
+    </div>
+</footer>
+
+<script>
+    // Mobile menu toggle
+    document.querySelector('.mobile-menu-toggle')?.addEventListener('click', function() {
+        document.querySelector('.nav-menu').classList.toggle('active');
+    });
+
+    // Close menu when a link is clicked
+    document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', function() {
+            document.querySelector('.nav-menu').classList.remove('active');
+        });
+    });
+</script>
+</body>
+</html>

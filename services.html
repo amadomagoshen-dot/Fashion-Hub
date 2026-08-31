@@ -3,43 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services</title>
+    <title>Services - Fashion Hub</title>
+    <link rel="contact sheet" href=".contact.html ">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header class="main-header">
-    <div class="logo">
-        <a href="#">
-            <img src="./fashion hub.jpeg" alt="Est 2026"style="width: 100px; height: auto;">
-        </a>
+    <div class="header-container">
+        <div class="logo">
+            <a href="index.html">
+                <img src="./fashion hub.jpeg" alt="Fashion Hub Logo" style="width: 100px; height: auto;">
+            </a>
         </div>
 
-            
-                
-                <a href="#" class ="active">Home</a>
-                <a href="#">Services</a>
-                <a href="#">Portfolio</a>
-                <a href="#">About</a>
-            
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="services.html" class="nav-link active">Services</a>
+            <a href="Portfolio.html" class="nav-link">Portfolio</a>
+            <a href="about.html" class="nav-link">About</a>
         </nav>
 
         <div class="cta-button">
-            <a href="#">Get started</a>
-        
-    </div>
-</header><section class="hero-section">
-    <div class="hero-content">
-        <h1 class="hero-title">Welcome to Fashion Hub</h1>
-        <p class="hero-subtitle">Your one-stop destination for the latest fashion trends and styles.</p>
-        <div class="hero-image">
-                
+            <a href="#" class="btn-primary">Get Started</a>
         </div>
-        <div class="hero-buttons">
-            <a href="#" class="btn btn primary">Get started</a>
-            <a href="#" class="btn btn secondary">Shop Now</a>
-        </div>`
+
+        <div class="mobile-menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </div>
-</section>
+</header>
+
+<main>
+    <section class="page-banner">
+        <h1>Our Services</h1>
+        <p>Everything you need for your fashion needs</p>
+    </section>
+
+    <section class="services-section">
+        <div class="container">
+            <h2>What We Offer</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🛍️</div>
+                    <h3>Fashion Retail</h3>
+                    <p>Browse and purchase from our curated collection of trending and classic fashion pieces for all occasions.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">✨</div>
+                    <h3>Style Consultation</h3>
+                    <p>Get expert advice on choosing outfits that match your personal style and body type.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📦</div>
+                    <h3>Fast Delivery</h3>
+                    <p>Quick and reliable shipping to get your favorite pieces right to your doorstep.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎁</div>
+                    <h3>Custom Tailoring</h3>
+                    <p>Professional tailoring services to ensure the perfect fit for your special occasions.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💳</div>
+                    <h3>Easy Payment</h3>
+                    <p>Multiple payment options and installment plans to make shopping more convenient.</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2026 Fashion Hub. All rights reserved.</p>
+        <p><a>Email: assumptabest2502@gmail.com | Phone: 2348104748711</a>Contact</p>
+    </div>
+</footer>
+
+<script>
+    // Mobile menu toggle
+    document.querySelector('.mobile-menu-toggle')?.addEventListener('click', function() {
+        document.querySelector('.nav-menu').classList.toggle('active');
+    });
+
+    // Close menu when a link is clicked
+    document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', function() {
+            document.querySelector('.nav-menu').classList.remove('active');
+        });
+    });
+</script>
 </body>
 </html>

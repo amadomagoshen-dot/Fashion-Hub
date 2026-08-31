@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Fashion Hub</title>
+    <link rel="contact sheet" href=".contact.html ">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="main-header">
+    <div class="header-container">
+        <div class="logo">
+            <a href="index.html">
+                <img src="./fashion hub.jpeg" alt="Fashion Hub Logo" style="width: 100px; height: auto;">
+            </a>
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="services.html" class="nav-link">Services</a>
+            <a href="Portfolio.html" class="nav-link active">Portfolio</a>
+            <a href="about.html" class="nav-link">About</a>
+        </nav>
+
+        <div class="cta-button">
+            <a href="#" class="btn-primary">Get Started</a>
+        </div>
+
+        <div class="mobile-menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section class="page-banner">
+        <h1>Our Portfolio</h1>
+        <p>Showcase of our best designs and collections</p>
+    </section>
+
+    <section class="portfolio-section">
+        <div class="container">
+            <h2>Featured Collections</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-card">
+                    <div class="portfolio-image"><img src="Gemini_Generated_Image_yf7c27yf7c27yf7c.jpeg"></div>
+                    <h3>Sleeveless Elegance</h3>
+                    <p>Features a round neck, vertical paneling with subtle pleats, and multiple small tied fabric bows embellishing the front chest area. Perfect for playful and stylish looks.</p>
+                </div>
+                <div class="portfolio-card">
+                    <div class="portfolio-image"><img src="Gemini_Generated_Image_tyhyi2tyhyi2tyhy.jpeg"></div>
+                    <h3>Princess Ballgown</h3>
+                    <p>Embellished bodice with scoop neckline, detailed embroidery with geometric, diamond-patterned sequins and crystal accents. Tiered layered skirt with cascading ruffle layers.</p>
+                </div>
+                <div class="portfolio-card">
+                    <div class="portfolio-image"><img src="Gemini_Generated_Image_bc3k3rbc3k3rbc3k.jpeg""></div>
+                    <h3>Formal Summer Suit</h3>
+                    <p>All-white short suit designed for formal occasions during warmer weather. Features tailored blazer with short sleeves and soft pastel pink bow tie for a playful touch.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2026 Fashion Hub. All rights reserved.</p>
+       <p><a>Email: assumptabest2502@gmail.com | Phone: 2348104748711</a>Contact</p>
+    </div>
+</footer>
+
+<script>
+    // Mobile menu toggle
+    document.querySelector('.mobile-menu-toggle')?.addEventListener('click', function() {
+        document.querySelector('.nav-menu').classList.toggle('active');
+    });
+
+    // Close menu when a link is clicked
+    document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', function() {
+            document.querySelector('.nav-menu').classList.remove('active');
+        });
+    });
+</script>
+</body>
+</html>

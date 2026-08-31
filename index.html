@@ -4,30 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="contact sheet" href=".contact.html ">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header class="main-header">
-    <div class="logo">
-        <a href="#">
-            <img src="./fashion hub.jpeg" alt="Est 2026"style="width: 100px; height: auto;">
-        </a>
+    <div class="header-container">
+        <div class="logo">
+            <a href="index.html">
+                <img src="./fashion hub.jpeg" alt="Fashion Hub Logo" style="width: 100px; height: auto;">
+            </a>
         </div>
 
-            
-                
-                <a href="#" class ="active">Home</a>
-                <a href="#">Services</a>
-                <a href="#">Portfolio</a>
-                <a href="#">About</a>
-            
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-link active">Home</a>
+            <a href="services.html" class="nav-link">Services</a>
+            <a href="Portfolio.html" class="nav-link">Portfolio</a>
+            <a href="about.html" class="nav-link">About</a>
         </nav>
 
         <div class="cta-button">
-            <a href="#">Get started</a>
-            </div>
+            <a href="#" class="btn-primary">Get Started</a>
+        </div>
 
+        <div class="mobile-menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
 </header>
 <main>
 <section class="hero-section">
@@ -36,25 +42,70 @@
         <div class="hero-image">
                 
         <div class="hero-buttons">
-            <a href="#" class="btn btn primary">Get started</a>
+            <a href="#" class="btn btn primary">Shop now</a>
             <a href="#" class="btn btn secondary">Learn More</a>
         </div>`
     </div>
 </section>
-<section>
-    <div>
-    <img src="./fashion hub.jpeg" alt="Est 2026 s" srcset="">
+<section class"about-section">
+    <img src="./premium_photo-1664202526559-e21e9c0fb46a.jpeg">
+<div class="about content">
+    <h2>About My brand</h2>
+    <p>Women’s Collection: Features a wide range of wardrobe essentials, from trend-forward everyday wear and office attire to elegant evening outfits and comfortable loungewear.
+
+Men’s Collection: Focuses on versatility and fit, offering everything from crisp formal shirts and tailored trousers to casual denim, tees, and seasonal outerwear.
+
+Children’s Line: Designed with durability and comfort in mind, offering colorful, easy-to-wear clothing for babies, toddlers, and growing kids that can keep up with active lifestyles.</p>
+<a href="#" class="btn">Read More</a>
 </div>
-<div>
-    <h2>About My Brand</h2>
-    <p>This is a web that i will sew Your style of cloth </p>
-    <a href="" >Read More</a>
+</section>
+<section class="services">
+<h2>Fashion Hub</h2>
+<div class="service-card">
+    <div class="card">
+<h3><img src="./images (1).jpeg" alt="">Sleeveless Top: Features a round neck, vertical paneling with subtle pleats, and multiple small tied fabric bows embellishing the front chest and torso area.
+
+Wide-Leg Pants: Matching loose-fit cropped trousers designed with an elastic waistband and matching bow details on each pant leg just above the hem.
+
+Fabric & Build: Made from a structured yet lightweight knit fabric, offering a neat shape while ensuring comfort for play and daily wear.</h3>
+<div class="card-content"></div>
+    </div>
+<div class="card">
+<h3><img src="./images (2).jpeg" alt="">Embellished Bodice: The sleeveless top features a scoop neckline and detailed embroidery with geometric, diamond-patterned sequins and crystal accents that catch the light.
+
+Waist Sash & Bow: A wide satin sash sits at the waist, centered with a prominent, classic fabric bow tie.
+
+Tiered Layered Skirt: The lower half consists of a lace-embroidered overlay above several voluminous, cascading ruffle layers made of soft organza/tulle, creating a princess-style ballgown silhouette.</h3>
+<div class="card-content"></div>
+</div>    
+<div class="card">
+<h3><img src="./images.jpeg" alt="">This charming, all-white short suit is designed for formal occasions during warmer weather. It features a tailored white blazer with short sleeves, a classic buttoned dress shirt underneath, matching white shorts, and a soft pastel pink bow tie that adds a playful splash of color.
+
+The ensemble strikes a balance between traditional formalwear and breezy, age-appropriate comfort, making it an ideal choice for outdoor events like spring or summer weddings, garden parties, or ring-bearer duties.</h3>
+<div class="card-content"></div>
+</div>   
 </div>
 </section>
 </main>
 <footer>
 
 </footer>
+<p> 2026 Fashion Hub. All rights reserved.</p>
+        <p> 
+Email: assumptabest2502@gmail.com | Phone: 2348104748711
+            <a href="#" class="btn btn secondary">Contact</a> 
+<script>
+    // Mobile menu toggle
+    document.querySelector('.mobile-menu-toggle')?.addEventListener('click', function() {
+        document.querySelector('.nav-menu').classList.toggle('active');
+    });
 
+    // Close menu when a link is clicked
+    document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', function() {
+            document.querySelector('.nav-menu').classList.remove('active');
+        });
+    });
+</script>
 </body>
 </html>
